@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Predicting Military Expenditure of INDIA</title> 
+</head>
+<style>
+body {text-align: center;}
+</style>
+<body>
+	<h1>Predict Military Expenditure of INDIA</h1>
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="Year" placeholder="Enter year [2000-2025]" required="required" />
+
+        <button type="submit">Predict</button>
+    </form>
+    <br>
+    <br>
+   {{ prediction_text }} 
+</body>
+</html>
+
+
+
